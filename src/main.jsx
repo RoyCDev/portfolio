@@ -2,14 +2,24 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 
-import { ChakraProvider, extendTheme } from '@chakra-ui/react'
-import '@fontsource-variable/quicksand';  // Supports weights 300-700
+import { ChakraProvider, extendTheme, textDecoration } from '@chakra-ui/react'
 import '@fontsource/comic-mono';
+import '@fontsource/chilanka';
 
 const theme = extendTheme({
+  styles: {
+    global: { body: { bg: "black", color: "white" } }
+  },
   fonts: {
-    body: "Comic Mono, monospace",
-    ul: "Quicksand Variable, sans-serif"
+    body: "'Chilanka', cursive"
+  },
+  components: {
+    Link: {
+      baseStyle: {
+        fontFamily: "'Comic Mono', monospace",
+        _hover: { textDecoration: "none" }
+      }
+    }
   }
 })
 
