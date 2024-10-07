@@ -22,30 +22,28 @@ function Navbar() {
     return (
         <Box
             position="fixed"
-            left="50%"
-            transform="translateX(-50%)"
+            backdropFilter="blur(5px)"
             w="100%"
-            maxW='1440px'
-            pt={5}
-            px={12}
             zIndex={1}
         >
-            <Box display={{ md: "none" }}>
-                <Flex justifyContent="space-between" mb={3}>
-                    <Brand fontSize="2xl" boxSize={6} gap={2} mt={0.5} />
-                    <IconButton icon={<HamburgerIcon fontSize="lg" />} size="xs" variant="unstyled" onClick={onToggle} mt={1} />
-                </Flex>
-                <Collapse in={isOpen} startingHeight={1}>
-                    <VStack alignItems="flex-start">{navLinks}</VStack>
-                </Collapse>
-            </Box>
+            <Box maxW='1440px' m="0 auto" pt={5} px={12}>
+                <Box display={{ md: "none" }}>
+                    <Flex justifyContent="space-between">
+                        <Brand fontSize="2xl" boxSize={6} gap={2} mt={0.5} />
+                        <IconButton icon={<HamburgerIcon fontSize="lg" />} size="xs" variant="unstyled" onClick={onToggle} mt={1} />
+                    </Flex>
+                    <Collapse in={isOpen} startingHeight={1}>
+                        <VStack alignItems="flex-start" my={3}>{navLinks}</VStack>
+                    </Collapse>
+                </Box>
 
-            <Box display={{ base: "none", md: "block" }}>
-                <Flex gap={10} h={12} alignItems="center">
-                    <Brand fontSize="3xl" boxSize={7} gap={3} mt={1.5} />
-                    <Spacer />
-                    {navLinks}
-                </Flex>
+                <Box display={{ base: "none", md: "block" }}>
+                    <Flex gap={10} h={12} alignItems="center">
+                        <Brand fontSize="3xl" boxSize={7} gap={3} mt={1.5} />
+                        <Spacer />
+                        {navLinks}
+                    </Flex>
+                </Box>
             </Box>
         </Box>
     )

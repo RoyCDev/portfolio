@@ -3,7 +3,7 @@ import background from "./assets/backgroundfade.jpg"
 
 function Project({ project: { name, date, image, desc, tools } }) {
     const renderedTools = tools?.map(tool =>
-        <Tag variant="solid" colorScheme='whiteAlpha' pt={1}>{tool}</Tag>
+        <Tag variant="solid" colorScheme='whiteAlpha' pt={1} key={tool}>{tool}</Tag>
     )
 
     return (
@@ -14,7 +14,7 @@ function Project({ project: { name, date, image, desc, tools } }) {
                 bgSize: "cover",
                 transition: "background 0.5s ease-in-out"
             }}>
-            <Image src={image} opacity={0.75} borderRadius={15}></Image>
+            <Image src={image} opacity={0.75} borderRadius={10}></Image>
 
             <CardBody pt={2}>
                 <Text fontSize="xl" mt={5} color="white">{name}</Text>
