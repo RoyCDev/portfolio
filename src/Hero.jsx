@@ -10,8 +10,8 @@ function Hero() {
             bgPosition="center"
             h="752px"
         >
-            <Box maxW='1440px' m="0 auto" pt={48} px={12}>
-                <Text fontSize={50}>Hello World!</Text>
+            <Box maxW='1440px' m="0 auto" pt={56} px={12}>
+                <Text fontSize={50}>Hello, World!</Text>
                 <Text fontSize={25} mt={-2.5}>
                     I'm an aspiring <Text as="span" color="#3A83D8">frontend developer</Text>
                 </Text>

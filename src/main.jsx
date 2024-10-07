@@ -8,7 +8,10 @@ import '@fontsource/chilanka';
 
 const theme = extendTheme({
   styles: {
-    global: { body: { bg: "black", color: "white" } }
+    global: {
+      body: { bg: "black", color: "white" },
+      html: { scrollBehavior: "smooth" }
+    }
   },
   fonts: {
     body: "'Chilanka', cursive"

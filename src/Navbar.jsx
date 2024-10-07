@@ -15,7 +15,7 @@ function Brand({ fontSize, boxSize, gap, mt }) {
 
 function Navbar() {
     const { isOpen, onToggle } = useDisclosure()
-    const navLinks = ["Projects", "Social"].map(item =>
+    const navLinks = ["Resume", "Projects", "Social"].map(item =>
         <Link href={`#${item.toLowerCase()}`} display="block" key={item}>{item}</Link>
     )
 
@@ -28,6 +28,7 @@ function Navbar() {
             maxW='1440px'
             pt={5}
             px={12}
+            zIndex={1}
         >
             <Box display={{ md: "none" }}>
                 <Flex justifyContent="space-between" mb={3}>
