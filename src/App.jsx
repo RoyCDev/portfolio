@@ -3,6 +3,7 @@ import Navbar from "./Navbar"
 import Hero from "./Hero"
 import About from "./About"
 import Projects from "./Projects"
+import Social from "./Social"
 
 function App() {
   return (
@@ -14,11 +15,12 @@ function App() {
           About Me
         </Text>
         <About />
-        <Text fontSize={35} mt={16} mb={5} textAlign="center">
+        <Text fontSize={35} mt={16} mb={{ base: 5, xl: 8 }} textAlign="center">
           My Projects
         </Text>
         <Projects />
       </Box>
+      {/* <Social /> */}
     </Box>
   )
 }

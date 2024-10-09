@@ -4,6 +4,7 @@ import background from "./assets/background.jpg"
 function Hero() {
     return (
         <Box
+            id="#"
             bg={`url(${background}), linear-gradient(transparent 0%, black 95%)`}
             bgBlendMode="overlay"
             bgSize="cover"

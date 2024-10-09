@@ -5,7 +5,7 @@ import reactIcon from "./assets/react.svg"
 // accounts for mobile and desktop size
 function Brand({ fontSize, boxSize, gap, mt }) {
     return (
-        <Link fontSize={fontSize} >
+        <Link fontSize={fontSize} href="#">
             <Flex gap={gap}>
                 <Image src={reactIcon} boxSize={boxSize} alt="reactIcon" mt={mt} /> RoyC
             </Flex>

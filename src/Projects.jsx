@@ -1,4 +1,4 @@
-import { SimpleGrid } from "@chakra-ui/react"
+import { Tabs, Tab, TabList, TabPanel, TabPanels, SimpleGrid, Box } from "@chakra-ui/react"
 import Project from "./Project"
 import dailyEntry from "./assets/dailyEntry.png"
 import rental157A from "./assets/rental157A.png"
@@ -26,15 +26,43 @@ function Projects() {
             tools: ["React", "Material UI", "GraphQL", "AniList API"]
         }
     ]
-
     const renderedProjects = projects.map(p =>
         <Project key={p.name} project={p} />
     )
 
+
+    const renderedTabProjects = projects.map(p =>
+        <TabPanel p={0}>
+            <Project key={p.name} project={p} />
+        </TabPanel>
+    )
+
     return (
-        <SimpleGrid id="projects" columns={{ base: 1, md: 2, lg: 3 }} gap={5}>
-            {renderedProjects}
-        </SimpleGrid>
+        <Box id="projects">
+            <SimpleGrid gap={5} display={{ base: "grid", md: "none" }}>
+                {renderedProjects}
+            </SimpleGrid>
+
+            <Tabs
+                variant='soft-rounded'
+                size={{ base: "sm", xl: "md" }}
+                display={{ base: "none", md: "grid" }}
+                maxW={{ base: "650px", xl: "1086px" }}
+                m="0 auto"
+                gridTemplateAreas={`"list panel"`}
+                gridTemplateColumns={{ base: "215px 1fr", xl: "300px 1fr" }}
+                gap={10}
+            >
+                <TabList gridArea="list" flexDirection="column" gap={1.5}>
+                    <Tab>Daily Entry</Tab>
+                    <Tab>157A Car Rental</Tab>
+                    <Tab>AniChar Search</Tab>
+                </TabList>
+                <TabPanels gridArea="panel">
+                    {renderedTabProjects}
+                </TabPanels>
+            </Tabs>
+        </Box>
     )
 }
 
