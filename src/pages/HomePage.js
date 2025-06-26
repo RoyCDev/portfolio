@@ -9,7 +9,7 @@ function HomePage() {
    return (
       <div className="flex flex-col md:flex-row max-w-[1080px] mx-auto">
          <div className="md:w-[292px] p-6">
-            <img src={profile} alt="profile image" className="w-[160px] h-[160px] rounded-full mx-auto" />
+            <img src={profile} alt="profile" className="w-[160px] h-[160px] rounded-full mx-auto" />
 
             <p className="text-xl font-semibold mt-5">Roy Cheung</p>
             <p className="text-neutral-500">@ Frontend Developer</p>
@@ -29,10 +29,10 @@ function HomePage() {
             <hr className="my-4" />
             <p className="text-sm font-semibold mb-2">Contact Me</p>
             <div className="flex items-center justify-center gap-3 py-2 bg-neutral-100 rounded">
-               <a href="https://github.com/RoyCDev" target="_blank" className="hover:opacity-70">
+               <a href="https://github.com/RoyCDev" target="_blank" rel="noreferrer" className="hover:opacity-70">
                   <FaGithub size={25} />
                </a>
-               <a href="https://www.linkedin.com/in/roy-cheung-web-dev/" target="_blank" className="hover:opacity-70">
+               <a href="https://www.linkedin.com/in/roy-cheung-web-dev/" target="_blank" rel="noreferrer" className="hover:opacity-70">
                   <FaLinkedin size={25} />
                </a>
                <a href="mailto:rcheung0117@gmail.com" className="hover:opacity-70">
@@ -49,7 +49,7 @@ function HomePage() {
             </ul>
             <h2 className="mt-5 text-lg font-semibold">More about me </h2>
             <ul className="list-disc ml-8 mt-2 space-y-1">
-               <li>My first exposure to programming dates back to high school, where I learned about making <a href="https://scratch.mit.edu/users/CheungRcompsci" target="_blank" className="underline">Scratch games</a> and websites. What I enjoyed is the immediate visual feedback. It's exciting to witness how my projects evolve and come to life as the progress unfold step by step</li>
+               <li>My first exposure to programming dates back to high school, where I learned about making <a href="https://scratch.mit.edu/users/CheungRcompsci" target="_blank" rel="noreferrer" className="underline">Scratch games</a> and websites. What I enjoyed is the immediate visual feedback. It's exciting to witness how my projects evolve and come to life as the progress unfold step by step</li>
                <li>I have high standards for my work quality, and I always strive to improve. Currently, I'm looking for an opportunity to bring my skills to a professional setting. I'm comfortable working on Frontend web development with React.js</li>
             </ul>
          </div>

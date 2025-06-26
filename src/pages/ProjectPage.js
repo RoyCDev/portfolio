@@ -22,7 +22,7 @@ function ProjectPage() {
                   }
                   <h2 className="text-lg font-semibold mt-4 flex items-center gap-1">
                      {proj.name}
-                     <a href={proj.link} target="_blank" className="cursor-pointer"><FaExternalLinkAlt size={12} /></a>
+                     <a href={proj.link} target="_blank" rel="noreferrer" className="cursor-pointer"><FaExternalLinkAlt size={12} /></a>
                   </h2>
                   <p className="text-xs flex items-center gap-1">
                      <FaRegCalendar />{proj.year}
