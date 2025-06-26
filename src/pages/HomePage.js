@@ -2,7 +2,6 @@ import profile from "../assets/profile.png"
 import { FaLocationDot, FaPhoneFlip, FaGithub, FaLinkedin } from "react-icons/fa6";
 import techIcons from "../util/techIcons";
 import { MdEmail } from "react-icons/md";
-import { useEffect } from "react";
 
 function HomePage() {
    const tech = ["HTML", "CSS", "Javascript", "React", "TailwindCSS", "DaisyUI"]

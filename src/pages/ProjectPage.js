@@ -14,7 +14,7 @@ function ProjectPage() {
          <h1 className="text-xl mt-8">Projects</h1>
          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
             {projects.map((proj, index) =>
-               <section key={index} className="text-sm border-[1px] rounded-xl p-5 transition-all duration-300 hover:bg-neutral-50 flex flex-col">
+               <section key={index} className="text-sm border-[1px] rounded-xl p-5 transition-all duration-300 hover:bg-neutral-50 hover:-translate-y-2 flex flex-col">
                   <div className="bg-neutral-100 rounded px-2 py-0.5 w-fit mb-3">{proj.tools[0]}</div>
                   {proj.video ?
                      <iframe width="100%" className="aspect-video rounded-lg" src={proj.video} title={proj} /> :
