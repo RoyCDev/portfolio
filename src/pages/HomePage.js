@@ -1,17 +1,10 @@
-import profile from "../profile.png"
+import profile from "../assets/profile.png"
 import { FaLocationDot, FaPhoneFlip, FaGithub, FaLinkedin } from "react-icons/fa6";
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiTailwindcss, SiDaisyui } from "react-icons/si";
+import techIcons from "../util/techIcons";
 import { MdEmail } from "react-icons/md";
 
 function HomePage() {
-   const tech = [
-      { name: "HTML", icon: <SiHtml5 size={18} /> },
-      { name: "CSS", icon: <SiCss3 size={18} /> },
-      { name: "Javascript", icon: <SiJavascript size={18} /> },
-      { name: "React", icon: <SiReact size={18} /> },
-      { name: "TailwindCSS", icon: <SiTailwindcss size={18} /> }, ,
-      { name: "DaisyUI", icon: <SiDaisyui size={18} /> },
-   ]
+   const tech = ["HTML", "CSS", "Javascript", "React", "TailwindCSS", "DaisyUI"]
 
    return (
       <div className="flex">
@@ -26,13 +19,13 @@ function HomePage() {
 
             <hr className="my-4" />
             <p className="text-sm font-semibold mb-2">Tech Stack</p>
-            <div className="flex flex-wrap gap-2">
-               {tech.map(item =>
-                  <div className="bg-neutral-100 rounded p-2 group relative">
-                     {item.icon}
-                     <div className="text-sm text-white bg-black -mt-12 rounded px-2 py-0.5 shadow-lg invisible group-hover:visible absolute left-1/2 -translate-x-1/2 z-[1]">{item.name}</div>
-                  </div>)}
-            </div>
+            <ul className="flex flex-wrap gap-2">
+               {tech.map((name, index) =>
+                  <li key={index} className="bg-neutral-100 rounded p-2 group relative">
+                     {techIcons[name]}
+                     <div className="text-sm text-white bg-black -mt-12 rounded px-2 py-0.5 shadow-lg invisible group-hover:visible absolute left-1/2 -translate-x-1/2 z-[1]">{name}</div>
+                  </li>)}
+            </ul>
             {/* <div className="flex items-center justify-center gap-3 py-2 bg-neutral-100 rounded-b-xl">
                <a href="https://github.com/RoyCDev" target="_blank" className="hover:opacity-70">
                   <FaGithub size={25} />

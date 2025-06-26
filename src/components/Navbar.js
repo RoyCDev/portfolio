@@ -14,8 +14,8 @@ function Navbar() {
          </div>
          <ul className="flex">
             {links.map((link, index) => (
-               <li key={index} className="px-4 py-2 rounded-full hover:bg-neutral-100">
-                  <Link to={link.to}>{link.name}</Link>
+               <li key={index}>
+                  <Link to={link.to} className="px-4 py-2 rounded-full hover:bg-neutral-100" >{link.name}</Link>
                </li>
             ))}
          </ul>
