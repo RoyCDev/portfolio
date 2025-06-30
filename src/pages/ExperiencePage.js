@@ -15,7 +15,7 @@ function ExperiencePage() {
             {jobs.map((job, index) =>
                <section key={index} className="text-sm border-[1px] rounded-xl p-5 hover:-translate-y-2 transition-transform duration-300 hover:bg-neutral-50">
                   <div className="flex items-center gap-4">
-                     <img src={job.companyLogo} className="w-20 h-20 rounded-xl " />
+                     <img src={job.companyLogo} className="w-20 h-20 rounded-xl" alt="company" />
                      <div>
                         <h2 className="text-lg font-semibold">{job.title}</h2>
                         <p className="text-xs flex items-center gap-1">
