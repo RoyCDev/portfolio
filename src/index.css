@@ -1,2 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght@100..900&family=Playpen+Sans:wght@100..800&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
+
+@theme {
+  --font-josefin: "Josefin Sans", sans-serif;
+  --font-kumbh: "Kumbh Sans", sans-serif;
+  --font-playpen: "Playpen Sans", sans-serif;
+  --default-font-family: var(--font-josefin);
+}
