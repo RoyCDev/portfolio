@@ -3,7 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { TbBrandGithubFilled } from "react-icons/tb";
 
 interface ContactLinksProps {
-  className: string,
+  className?: string,
 }
 
 function ContactLinks({ className }: ContactLinksProps) {

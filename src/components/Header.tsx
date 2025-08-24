@@ -1,5 +1,6 @@
 import { NavLink } from "react-router"
 import Brand from "./Brand"
+import SectionTag from "./SectionTag"
 import ContactLinks from "./ContactLinks"
 
 function Header() {
@@ -8,7 +9,7 @@ function Header() {
       <div className="flex justify-between">
         <NavLink to="/"><Brand /></NavLink>
         <section>
-          <p className="bg-accent text-base-100 text-4xl rounded-l-full h-10.5 pt-1 px-15 -mr-15">Contact Me</p>
+          <SectionTag side="right">Contact Me</SectionTag>
           <ContactLinks className="flex justify-end gap-x-5 text-accent mt-5" />
         </section>
       </div>
