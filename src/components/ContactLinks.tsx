@@ -3,20 +3,23 @@ import { MdEmail } from "react-icons/md";
 import { TbBrandGithubFilled } from "react-icons/tb";
 
 interface ContactLinksProps {
-  className?: string,
+  location: "header" | "footer"
 }
 
-function ContactLinks({ className }: ContactLinksProps) {
+function ContactLinks({ location }: ContactLinksProps) {
   return (
-    <div className={className}>
+    <div className={`flex justify-self-end ${location === "header" ?
+      "text-accent mt-5 gap-x-5 " :
+      "text-white gap-x-4"
+      }`}>
       <a target="_blank" href="https://www.linkedin.com/in/roy-cheung-web-dev">
-        <PiLinkedinLogoFill size={50} />
+        <PiLinkedinLogoFill size={location === "header" ? 50 : 35} />
       </a>
       <a href="mailto:rcheung0117@gmail.com">
-        <MdEmail size={52} />
+        <MdEmail size={location === "header" ? 52 : 37} />
       </a>
       <a target="_blank" href="https://github.com/RoyCDev">
-        <TbBrandGithubFilled size={50} />
+        <TbBrandGithubFilled size={location === "header" ? 50 : 35} />
       </a>
     </div>
   )

@@ -7,10 +7,10 @@ function Header() {
   return (
     <header>
       <div className="flex justify-between">
-        <NavLink to="/"><Brand /></NavLink>
+        <NavLink to="/"><Brand location="header" /></NavLink>
         <section>
           <SectionTag side="right">Contact Me</SectionTag>
-          <ContactLinks className="flex justify-end gap-x-5 text-accent mt-5" />
+          <ContactLinks location="header" />
         </section>
       </div>
 
