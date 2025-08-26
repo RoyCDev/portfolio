@@ -8,7 +8,7 @@ interface ContactLinksProps {
 
 function ContactLinks({ location }: ContactLinksProps) {
   return (
-    <div className={`flex justify-self-end ${location === "header" ?
+    <div className={`flex justify-end ${location === "header" ?
       "text-accent mt-5 gap-x-5 " :
       "text-white gap-x-4"
       }`}>
