@@ -1,8 +1,6 @@
-import type { IconType } from "react-icons";
-import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiTypescript, SiReact, SiDaisyui, SiGit } from "react-icons/si";
+import type { Technology } from "./skillIcons"
 
-type Technology = "HTML" | "CSS" | "TailwindCSS" | "JavaScript" | "TypeScript" | "React.js" | "DaisyUI" | "Git"
-interface Bio {
+type Bio = {
   headline: string,
   introduction: string,
   facts: string[],
@@ -19,16 +17,4 @@ const bio: Bio = {
   skills: ["HTML", "CSS", "TailwindCSS", "JavaScript", "TypeScript", "React.js", "DaisyUI", "Git"]
 }
 
-const skillIcons: Record<Technology, IconType> = {
-  HTML: SiHtml5,
-  CSS: SiCss3,
-  TailwindCSS: SiTailwindcss,
-  JavaScript: SiJavascript,
-  TypeScript: SiTypescript,
-  "React.js": SiReact,
-  DaisyUI: SiDaisyui,
-  Git: SiGit
-}
-
-export { bio, skillIcons };
-export type { Technology };
+export default bio;

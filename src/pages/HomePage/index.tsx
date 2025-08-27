@@ -1,8 +1,8 @@
-import { bio } from "../../data.ts"
+import bio from "../../assets/data/bio.ts"
 import Avatar from "../../components/Avatar.tsx";
 import SectionTag from "../../components/SectionTag.tsx"
 import FactItem from "./FactItem.tsx";
-import SkillItem from "./SkillItem.tsx";
+import SkillItem from "../../components/SkillItem.tsx";
 import { FcNightPortrait } from "react-icons/fc";
 
 function HomePage() {
@@ -17,7 +17,7 @@ function HomePage() {
           </div>
           <div className="flex justify-around items-center">
             <p className="font-playpen text-7xl">Roy Cheung</p>
-            <FcNightPortrait size={335} />
+            <FcNightPortrait size={336} />
           </div>
           <p className="font-kumbh text-3xl">{bio.headline}</p>
         </section>
@@ -26,7 +26,8 @@ function HomePage() {
         <section className="font-kumbh text-2xl">
           <p>{bio.introduction}</p>
           <ul className="flex gap-5 mt-10">
-            {bio.facts.map((fact, i) => <FactItem fact={fact} number={i + 1}></FactItem>)}
+            {bio.facts.map((fact, i) =>
+              <FactItem key={i + 1} fact={fact} number={i + 1}></FactItem>)}
           </ul>
         </section>
       </div>
@@ -43,7 +44,8 @@ function HomePage() {
                 <p className="text-2xl mt-1">RoyCDev</p>
               </div>
               <ul className="space-y-2.5 mt-5">
-                {bio.skills.map((skill) => <SkillItem skill={skill} />)}
+                {bio.skills.map((skill) =>
+                  <SkillItem key={skill} skill={skill} location="HomePage" />)}
               </ul>
             </div>
             <p className="[writing-mode:sideways-lr] text-4xl bg-primary w-9 px-2">Tech Stack</p>
