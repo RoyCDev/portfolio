@@ -23,7 +23,7 @@ const projects: Project[] = [
   {
     name: "157A Car Rental",
     year: 2024,
-    description: "A simulation of car rental websites where the users can search, filter, and reserve vehicles. A separate admin panel is available to manage data. This is a group project from a databse course.",
+    description: "A simulation of car rental websites where the users can search, filter, and reserve vehicles. A separate admin panel is available to manage data. This is a group project from a database course.",
     tools: ["Flask", "Bootstrap", "SQLite"],
     category: "Web",
     link: "https://github.com/DuckyKay/CMPE157ACarRental",
