@@ -1,7 +1,7 @@
 import bio from "../../assets/data/bio.ts"
 import Avatar from "../../components/Avatar.tsx";
 import SectionTag from "../../components/SectionTag.tsx"
-import FactItem from "./FactItem.tsx";
+import InfoItem from "../../components/InfoItem.tsx";
 import SkillItem from "../../components/SkillItem.tsx";
 import { FcNightPortrait } from "react-icons/fc";
 
@@ -23,11 +23,11 @@ function HomePage() {
         </section>
 
         <SectionTag side="left" className="mt-12.5 mb-10">About Me</SectionTag>
-        <section className="font-kumbh text-2xl">
-          <p>{bio.introduction}</p>
+        <section className="font-kumbh">
+          <p className="text-2xl">{bio.introduction}</p>
           <ul className="flex gap-5 mt-10">
             {bio.facts.map((fact, i) =>
-              <FactItem key={i + 1} fact={fact} number={i + 1}></FactItem>)}
+              <InfoItem key={i + 1} info={fact} prefix="Fact" number={i + 1}></InfoItem>)}
           </ul>
         </section>
       </div>

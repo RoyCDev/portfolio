@@ -17,7 +17,7 @@ const jobs: Job[] = [
     start: "Jun",
     end: "Aug 2025",
     location: "Bekerley, CA",
-    description: "California Seismic is an open source project that provides free resources to help civil engineers prepare for the California Seismic Exam. As an intern, I was tasked to redesign two of the existing pages. Feel free to check my contribution on github.",
+    description: "California Seismic is an open source project that provides free resources to help civil engineers prepare for the California Seismic Exam. As an intern, I was tasked to redesign two of the existing pages and then implement using React.js and Tailwind CSS. Feel free to check my contribution on github.",
     responsibilities: [
       "Gained hands-on experience with AWS through deployment of my personal portfolio website.",
       "Created high-fidelity Figma prototypes to redesign the UI of existing features.",
