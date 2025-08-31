@@ -14,16 +14,20 @@ function ProjectPage() {
   return (
     <main className="mt-5">
       {/* top half */}
-      <div className="flex items-start gap-10">
-        <section className="flex-1 bg-primary p-12.5 relative">
-          <div className="flex items-center gap-3">
-            <SiLivejournal size={40} />
-            <p className="text-4xl mt-2">{featuredProject.name}</p>
+      <div className="md:flex md:items-start md:gap-6 xl:gap-10">
+        <section className="relative bg-primary p-7 sm:p-9 lg:p-12.5">
+          <div className="relative flex items-center gap-2 text-2xl sm:text-3xl lg:text-4xl lg:gap-3">
+            <SiLivejournal />
+            <p className="mt-2">{featuredProject.name}</p>
+            <p className="absolute bg-base-100 pt-0.5 -top-1.5 -right-1.5 px-2 lg:px-5">{featuredProject.year}</p>
+          </div>
+          <div className="flex justify-around items-center">
+            <img src={featuredProject.image} alt={featuredProject.name} className="max-w-54 sm:max-w-64 lg:max-w-none" />
           </div>
 
-          <div className="absolute top-10 right-10">
-            <p className="text-4xl bg-base-100 w-fit ml-auto mb-2 pt-0.5 px-5">{featuredProject.year}</p>
-            <ul className="flex gap-2 text-3xl text-accent">
+          <div className="font-kumbh text-lg sm:text-xl lg:text-3xl">
+            <p className="mb-3 lg:mb-0">{featuredProject.description}</p>
+            <ul className="flex gap-2 text-accent lg:absolute lg:pr-12.5 lg:top-24 lg:-right-1.5">
               {featuredProject.tools.map(tool => {
                 const Icon = skillIcons[tool]
                 return (
@@ -33,11 +37,6 @@ function ProjectPage() {
               })}
             </ul>
           </div>
-
-          <div className="flex justify-around items-center">
-            <img src={featuredProject.image} alt={featuredProject.name} className="size-84" />
-          </div>
-          <p className="font-kumbh text-3xl">{featuredProject.description}</p>
         </section>
 
         <div className="w-75 space-y-5">
