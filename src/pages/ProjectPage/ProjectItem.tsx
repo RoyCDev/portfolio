@@ -1,3 +1,4 @@
+import ProjectItemTag from "./ProjectItemTag.tsx";
 import SkillItem from "../../components/SkillItem.tsx";
 import type { Project } from "../../assets/data/projects.ts"
 
@@ -7,20 +8,20 @@ interface ProjectItemProps {
 
 function ProjectItem({ project }: ProjectItemProps) {
   return (
-    <article className="flex gap-x-5">
-      <ul className="space-y-2 min-w-35">
+    <article className="flex flex-wrap gap-5 md:gap-3 md:flex-nowrap lg:gap-5">
+      <div className="relative w-full md:order-2 md:w-60 lg:w-80">
+        <img src={project.image} alt={project.name} className="" />
+        <ProjectItemTag className="bg-base-100 top-2 sm:top-4 md:top-1.5 lg:top-2">{project.year}</ProjectItemTag>
+        <ProjectItemTag className="bg-secondary text-base-100 top-11 sm:top-14 md:top-9 lg:top-11">{project.category}</ProjectItemTag>
+      </div>
+      <div className="space-y-1 flex-1 -mt-1 md:order-3 md:ml-2">
+        <p className="text-xl sm:text-2xl lg:text-3xl">{project.name}</p>
+        <p className="font-kumbh sm:text-lg lg:text-xl">{project.description}</p>
+      </div>
+      <ul className="space-y-2 text-sm min-w-30 md:order-1 lg:text-base lg:min-w-35 ">
         {project.tools.map(tool =>
           <SkillItem key={tool} skill={tool} location="ProjectPage" />)}
       </ul>
-      <div className="relative">
-        <img src={project.image} alt={project.name} className="min-w-80 h-50" />
-        <p className="absolute top-2 left-2 text-2xl bg-base-100 px-3 shadow shadow-primary">{project.year}</p>
-        <p className="absolute top-11 left-2 text-2xl bg-secondary text-base-100 px-3 pt-0.5 h-8">{project.category}</p>
-      </div>
-      <div className="space-y-2 ml-3">
-        <p className="text-3xl">{project.name}</p>
-        <p className="text-xl font-kumbh">{project.description}</p>
-      </div>
     </article>
   )
 }

@@ -39,7 +39,7 @@ function ProjectPage() {
           </div>
         </section>
 
-        <div className="w-75 space-y-5">
+        <div className="hidden md:block w-75 space-y-5">
           <section className="size-75 bg-secondary" />
 
           <section className="bg-secondary p-5 pb-4">
@@ -73,7 +73,7 @@ function ProjectPage() {
 
       {/* bottom half */}
       <SectionTag side="left" className="mt-12.5 mb-10">More Projects</SectionTag>
-      <section className="space-y-10">
+      <section className="space-y-15 lg:space-y-10">
         {otherProjects.map((project, i) =>
           <ProjectItem key={i} project={project} />
         )}
