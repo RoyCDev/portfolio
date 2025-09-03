@@ -12,7 +12,7 @@ function ProjectPage() {
   const uiCount = projects.length - webCount;
 
   return (
-    <main className="mt-5">
+    <main className="mt-2 lg:mt-5">
       {/* top half */}
       <div className="md:flex md:items-start md:gap-6 xl:gap-10">
         <section className="relative bg-primary p-7 sm:p-9 lg:p-12.5">
@@ -22,7 +22,7 @@ function ProjectPage() {
             <p className="absolute bg-base-100 pt-0.5 -top-1.5 -right-1.5 px-2 lg:px-5">{featuredProject.year}</p>
           </div>
           <div className="flex justify-around items-center">
-            <img src={featuredProject.image} alt={featuredProject.name} className="max-w-54 sm:max-w-64 lg:max-w-none" />
+            <img src={featuredProject.image} alt={featuredProject.name} className="size-54 sm:size-64 lg:size-84" />
           </div>
 
           <div className="font-kumbh text-lg sm:text-xl lg:text-3xl">
@@ -72,7 +72,7 @@ function ProjectPage() {
       </div>
 
       {/* bottom half */}
-      <SectionTag side="left" className="mt-12.5 mb-10">More Projects</SectionTag>
+      <SectionTag side="left" className="mt-7.5 mb-5 lg:mt-12.5 lg:mb-10">More Projects</SectionTag>
       <section className="space-y-10 sm:space-y-15 lg:space-y-10">
         {otherProjects.map((project, i) =>
           <ProjectItem key={i} project={project} />

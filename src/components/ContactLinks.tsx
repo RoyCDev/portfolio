@@ -9,17 +9,17 @@ interface ContactLinksProps {
 function ContactLinks({ location }: ContactLinksProps) {
   return (
     <div className={`flex justify-end ${location === "header" ?
-      "text-accent mt-5 gap-x-5 " :
-      "text-white gap-x-4"
+      "text-accent text-[42px] gap-x-4 mt-4 lg:text-5xl lg:gap-x-5 lg:mt-5" :
+      "text-white gap-x-4 text-4xl"
       }`}>
       <a target="_blank" href="https://www.linkedin.com/in/roy-cheung-web-dev">
-        <PiLinkedinLogoFill size={location === "header" ? 50 : 35} />
+        <PiLinkedinLogoFill />
       </a>
       <a href="mailto:rcheung0117@gmail.com">
-        <MdEmail size={location === "header" ? 52 : 37} />
+        <MdEmail />
       </a>
       <a target="_blank" href="https://github.com/RoyCDev">
-        <TbBrandGithubFilled size={location === "header" ? 50 : 35} />
+        <TbBrandGithubFilled />
       </a>
     </div>
   )

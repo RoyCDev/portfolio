@@ -5,9 +5,9 @@ import InfoItem from "../../components/InfoItem";
 
 function ExperiencePage() {
   return (
-    <ul className="mt-15">
+    <ul className="mt-10 lg:mt-15">
       {jobs.map((job, i) => (
-        <li key={i} className="grid grid-cols-[auto_1fr] grid-rows-[auto_auto] gap-3 md:flex md:items-start md:gap-6">
+        <li key={i} className="grid grid-cols-[auto_1fr] grid-rows-[auto_auto] gap-3 md:flex md:items-start lg:gap-6">
           <div className="divider divider-accent divider-start divider-horizontal before:w-0.25! after:w-0.25! gap-0! row-span-2 md:order-2">
             <Avatar src={job.logo} alt={job.company} className="w-10 lg:w-12.5" />
           </div>

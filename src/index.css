@@ -20,3 +20,9 @@
   --font-playpen: "Playpen Sans", sans-serif;
   --default-font-family: var(--font-josefin);
 }
+
+@layer base {
+  html {
+    user-select: none;
+  }
+}

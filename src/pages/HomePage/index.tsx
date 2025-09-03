@@ -7,7 +7,7 @@ import { FcNightPortrait } from "react-icons/fc";
 
 function HomePage() {
   return (
-    <main className="mt-5 flex flex-col gap-6 md:flex-row xl:gap-10">
+    <main className="mt-2 lg:mt-5 flex flex-col gap-6 md:flex-row xl:gap-10">
       {/* left panel */}
       <div className="flex-1">
         <section className="bg-primary p-7 sm:p-9 lg:p-12.5">
@@ -22,7 +22,7 @@ function HomePage() {
           <p className="font-kumbh text-lg sm:text-xl lg:text-3xl">{bio.headline}</p>
         </section>
 
-        <SectionTag side="left" className="mt-12.5 mb-10">About Me</SectionTag>
+        <SectionTag side="left" className="mt-7.5 mb-5 lg:mt-12.5 lg:mb-10">About Me</SectionTag>
         <section className="font-kumbh">
           <p className="text-lg sm:text-xl lg:text-2xl">{bio.introduction}</p>
           <ul className="flex flex-col gap-6 mt-6 lg:flex-row lg:mt-10">

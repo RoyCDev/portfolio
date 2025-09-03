@@ -8,13 +8,13 @@ function Header() {
     <header>
       <div className="flex justify-between">
         <NavLink to="/"><Brand location="header" /></NavLink>
-        <section>
+        <section className="hidden md:block">
           <SectionTag side="right">Contact Me</SectionTag>
           <ContactLinks location="header" />
         </section>
       </div>
 
-      <nav className="flex items-center gap-x-5 text-2xl font-normal">
+      <nav className="flex items-center text-lg gap-x-3 md:text-xl md:gap-x-3.5 lg:text-2xl lg:gap-x-5">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/experience">Experience</NavLink>
         <NavLink to="/project">Projects</NavLink>

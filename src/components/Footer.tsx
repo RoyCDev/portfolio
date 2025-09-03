@@ -3,7 +3,7 @@ import ContactLinks from "./ContactLinks"
 
 function Footer() {
   return (
-    <footer className="footer sm:footer-horizontal justify-around items-end bg-neutral pt-10 pb-8 select-none">
+    <footer className="footer justify-items-center sm:footer-horizontal sm:justify-between items-end max-w-screen-xl px-6 mx-auto">
       <aside>
         <div className="flex gap-2">
           <Brand location="footer" />
