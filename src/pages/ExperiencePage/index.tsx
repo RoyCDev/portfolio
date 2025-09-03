@@ -19,7 +19,7 @@ function ExperiencePage() {
               <p className="mt-0.5">{job.location}</p>
             </div>
           </div>
-          <div className={i !== jobs.length - 1 ? "pb-20 md:order-3" : "md:order-3"}>
+          <div className={i !== jobs.length - 1 ? "pb-10 md:order-3 lg:pb-20 " : "md:order-3"}>
             <p className="text-2xl md:text-3xl lg:text-4xl">{job.company}</p>
             {job.description && <p className="font-kumbh mt-5 sm:text-lg lg:text-xl">{job.description}</p>}
             <p className="mt-5 mb-3 text-lg sm:text-xl lg:text-2xl">Accomplishments:</p>

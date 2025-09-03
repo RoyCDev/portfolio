@@ -73,7 +73,7 @@ function ProjectPage() {
 
       {/* bottom half */}
       <SectionTag side="left" className="mt-12.5 mb-10">More Projects</SectionTag>
-      <section className="space-y-15 lg:space-y-10">
+      <section className="space-y-10 sm:space-y-15 lg:space-y-10">
         {otherProjects.map((project, i) =>
           <ProjectItem key={i} project={project} />
         )}
