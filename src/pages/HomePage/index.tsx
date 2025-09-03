@@ -7,25 +7,25 @@ import { FcNightPortrait } from "react-icons/fc";
 
 function HomePage() {
   return (
-    <main className="flex gap-10 mt-5">
+    <main className="mt-5 flex flex-col gap-6 md:flex-row xl:gap-10">
       {/* left panel */}
       <div className="flex-1">
-        <section className="bg-primary p-12.5">
-          <div className="flex items-center gap-3">
-            <Avatar src="/profile.png" alt="profile image" className="w-10" />
-            <p className="text-4xl mt-2">Hello, I'm</p>
+        <section className="bg-primary p-7 sm:p-9 lg:p-12.5">
+          <div className="flex items-center gap-2 lg:gap-3">
+            <Avatar src="/profile.png" alt="profile image" className="w-6 sm:w-7 lg:w-10" />
+            <p className="text-2xl sm:text-3xl lg:text-4xl mt-2">Hello, I'm</p>
           </div>
-          <div className="flex justify-around items-center">
-            <p className="font-playpen text-7xl">Roy Cheung</p>
-            <FcNightPortrait size={336} />
+          <div className="flex flex-col justify-around items-center lg:flex-row-reverse">
+            <FcNightPortrait className="size-49 sm:size-56.5 lg:size-84" />
+            <p className="font-playpen text-3xl mb-6 sm:text-4xl sm:mb-8 lg:text-6xl">Roy Cheung</p>
           </div>
-          <p className="font-kumbh text-3xl">{bio.headline}</p>
+          <p className="font-kumbh text-lg sm:text-xl lg:text-3xl">{bio.headline}</p>
         </section>
 
         <SectionTag side="left" className="mt-12.5 mb-10">About Me</SectionTag>
         <section className="font-kumbh">
-          <p className="text-2xl">{bio.introduction}</p>
-          <ul className="flex gap-5 mt-10">
+          <p className="text-lg sm:text-xl lg:text-2xl">{bio.introduction}</p>
+          <ul className="flex flex-col gap-6 mt-6 lg:flex-row lg:mt-10">
             {bio.facts.map((fact, i) =>
               <InfoItem key={i + 1} info={fact} prefix="Fact" number={i + 1}></InfoItem>)}
           </ul>
@@ -33,8 +33,8 @@ function HomePage() {
       </div>
 
       {/* right panel */}
-      <div className="w-75 space-y-5">
-        <section className="bg-secondary size-75" />
+      <div className="md:w-75 md:space-y-5">
+        <section className="hidden md:block bg-secondary size-75" />
 
         <section className="bg-secondary p-5">
           <div className="flex gap-5 items-start mt-2">
@@ -43,14 +43,14 @@ function HomePage() {
                 <Avatar src="/github.png" alt="github image" className="w-8" />
                 <p className="text-2xl mt-1">RoyCDev</p>
               </div>
-              <ul className="space-y-2.5 mt-5">
+              <ul className="grid sm:grid-cols-2 md:grid-cols-1 gap-2.5 mt-5">
                 {bio.skills.map((skill) =>
                   <SkillItem key={skill} skill={skill} location="HomePage" />)}
               </ul>
             </div>
             <p className="[writing-mode:sideways-lr] text-4xl bg-primary w-9 px-2">Tech Stack</p>
           </div>
-          <img src="/vector.svg" alt="man developing website on desk)" className="mt-8 mb-6" />
+          <img src="/vector.svg" alt="man developing website on desk)" className="mt-8 mb-6 mx-auto" />
         </section>
       </div >
     </main >
