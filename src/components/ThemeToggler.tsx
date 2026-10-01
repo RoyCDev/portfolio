@@ -17,9 +17,12 @@ function ThemeToggler() {
   }, [])
 
   return (
-    <button onClick={toggleTheme} className="relative cursor-pointer">
-      <MdLightMode className="dark:opacity-0 -rotate-35 dark:rotate-0 absolute top-[25%]  transition-transform duration-300" />
-      <MdDarkMode className="opacity-0 dark:opacity-100 rotate-0 dark:rotate-35 absolute top-[25%] transition-transform duration-300" />
+    <button
+      onClick={toggleTheme}
+      className="relative cursor-pointer text-3xl size-7.5"
+    >
+      <MdLightMode className="dark:opacity-0 -rotate-35 dark:rotate-0 absolute top-0  transition-transform duration-300" />
+      <MdDarkMode className="opacity-0 dark:opacity-100 rotate-0 dark:rotate-35 absolute top-0 transition-transform duration-300" />
     </button>
   )
 }
