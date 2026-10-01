@@ -7,4 +7,21 @@
   --font-kumbh: "Kumbh Sans", sans-serif;
   --font-playpen: "Playpen Sans", sans-serif;
   --default-font-family: var(--font-josefin);
+
+  --color-base: #FFF;
+  --color-base-content: #162242;
+  --color-accent: #162242;
+
+}
+
+@layer base {
+  html {
+    user-select: none;
+  }
+
+  @variant dark {
+    --color-base: #2A2B37;
+    --color-base-content: #FFF;
+    --color-accent: #D9D9D9;
+  }
 }
