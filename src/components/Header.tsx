@@ -4,9 +4,13 @@ import ThemeToggler from "./ThemeToggler"
 import SectionTag from "./SectionTag"
 import ContactLinks from "./ContactLinks"
 
-function Header() {
+interface HeaderProps {
+  className?: string
+}
+
+function Header({ className }: HeaderProps) {
   return (
-    <header>
+    <header className={className}>
       <div className="flex justify-between">
         <Brand />
         <section>
