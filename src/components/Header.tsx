@@ -14,14 +14,14 @@ function Header({ className }: HeaderProps) {
       <div className="flex justify-between">
         <Brand />
         <section>
-          <SectionTag right>Contact Me</SectionTag>
+          <SectionTag right className="hidden lg:block">Contact Me</SectionTag>
           <ContactLinks />
         </section>
       </div>
 
-      <div className="flex text-2xl gap-x-5 items-center -mt-1">
+      <div className="flex text-lg lg:text-2xl gap-x-3 lg:gap-x-5 items-center mt-3 lg:-mt-1">
         <nav>
-          <ul className="flex gap-x-5">
+          <ul className="flex gap-x-3 lg:gap-x-5">
             <li className="hover:opacity-75 hover:underline">
               <NavLink to="/">Home</NavLink>
             </li>
