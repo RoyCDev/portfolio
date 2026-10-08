@@ -8,7 +8,7 @@
   --font-playpen: "Playpen Sans", sans-serif;
   --default-font-family: var(--font-josefin);
 
-  --color-base: #FFF;
+  --color-base-100: #FFF;
   --color-base-content: #162242;
   --color-accent: #162242;
   --color-primary: #F2F8FF;
@@ -22,7 +22,7 @@
   }
 
   @variant dark {
-    --color-base: #2A2B37;
+    --color-base-100: #2A2B37;
     --color-base-content: #FFF;
     --color-primary: #383D51;
     --color-secondary: #7A7F92;

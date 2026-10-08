@@ -32,7 +32,7 @@ function HomePage() {
           {bio.facts.map((fact, index) => (
             <li key={index} className="bg-primary xl:text-lg px-5 py-4">
               {fact}
-              <span className="font-josefin float-right text-lg xl:text-xl bg-secondary  dark:text-base px-3 pt-0.5 mt-2">
+              <span className="font-josefin float-right text-lg xl:text-xl bg-secondary  dark:text-base-100 px-3 pt-0.5 mt-2">
                 Fact {index + 1}
               </span>
             </li>
@@ -42,7 +42,7 @@ function HomePage() {
 
       {/* skills */}
       <section className="lg:[grid-area:d] bg-secondary px-5 py-6">
-        <p className="[writing-mode:sideways-lr] float-right text-4xl bg-accent dark:bg-base text-base dark:text-base-content px-2 w-9 ml-5">Tech Stack</p>
+        <p className="[writing-mode:sideways-lr] float-right text-4xl bg-accent dark:bg-base text-base-100 dark:text-base-content px-2 w-9 ml-5">Tech Stack</p>
         <div className="flex gap-x-3">
           <img src="github.png" className="size-8 rounded-full" />
           <p className="text-2xl mt-1">RoyCDev</p>
