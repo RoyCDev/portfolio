@@ -25,7 +25,7 @@ function HomePage() {
       </section>
 
       {/* about me */}
-      <section className="lg:[grid-area:c] xl:mt-6.5">
+      <section className="lg:[grid-area:c]">
         <SectionTag left>About Me</SectionTag>
         <p className="font-kumbh text-lg md:text-xl xl:text-2xl mt-4 lg:mt-6">{bio.introduction}</p>
         <ul className="font-kumbh grid sm:grid-cols-2 gap-5 md:gap-7 mt-5 lg:mt-7.5">

@@ -23,7 +23,7 @@ function ExperiencePage() {
 
           {/* job duty */}
           <section className="[grid-area:c] pb-16">
-            <h2 className="text-2xl lg:text-4xl mt-1">{job.company}</h2>
+            <h2 className="text-2xl lg:text-4xl md:mt-2 lg:mt-1">{job.company}</h2>
             <p className="font-kumbh text-lg lg:text-xl mt-5">{job.description}</p>
             <p className="text-xl lg:text-2xl mt-7.5 lg:mt-11.5">Responsibilities:</p>
             <ol className="font-kumbh lg:text-lg mt-2">
