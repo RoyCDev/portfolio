@@ -8,9 +8,9 @@ interface SectionTagProps {
 
 function SectionTag({ children, left, right }: SectionTagProps) {
   return (
-    <span className={clsx("inline-block text-4xl bg-accent text-base px-15 pt-1.5 mb-3",
+    <span className={clsx("inline-block text-2xl lg:text-3xl xl:text-4xl bg-accent text-base px-15 pt-1.5 lg:mb-3",
       right && "-mr-15 rounded-l-full",
-      left && "-ml-15 rounded-r-full"
+      left && "-ml-10 md:-ml-15 rounded-r-full"
     )}>
       {children}
     </span>
