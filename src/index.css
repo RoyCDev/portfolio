@@ -14,6 +14,34 @@
   --color-primary: #F2F8FF;
   --color-secondary: #D7E3F3;
 
+  --animate-reveal-left: reveal-left 0.4s;
+  --animate-reveal-right: reveal-right 0.4s;
+
+  @keyframes reveal-left {
+
+    0% {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes reveal-right {
+
+    0% {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 }
 
 @layer base {

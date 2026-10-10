@@ -13,7 +13,7 @@ function ExperiencePage() {
           </section>
 
           {/* job basic info */}
-          <section className="[grid-area:b] md:text-right">
+          <section className="[grid-area:b] md:text-right animate-reveal-left">
             <p className="text-sm lg:text-base">{job.start} - {job.end}</p>
             <p className="text-lg lg:text-2xl leading-6 mt-1 lg:mt-2.5">{job.title}</p>
             <p className="flex gap-1 w-fit bg-secondary my-2 lg:mt-5 md:ml-auto pt-0.5 px-3 text-sm lg:text-base">
@@ -22,7 +22,7 @@ function ExperiencePage() {
           </section>
 
           {/* job duty */}
-          <section className="[grid-area:c] pb-16">
+          <section className="[grid-area:c] pb-16 animate-reveal-right">
             <h2 className="text-2xl lg:text-4xl md:mt-2 lg:mt-1">{job.company}</h2>
             <p className="font-kumbh text-lg lg:text-xl mt-5">{job.description}</p>
             <p className="text-xl lg:text-2xl mt-7.5 lg:mt-11.5">Responsibilities:</p>

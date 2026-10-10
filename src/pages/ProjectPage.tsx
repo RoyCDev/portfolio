@@ -18,7 +18,7 @@ function ProjectPage() {
   return (
     <main className="grid lg:grid-cols-[1fr_284px] lg:[grid-template-areas:'b_c'_'b_a'_'b_.'_'d_d'] gap-5 lg:gap-x-11.5 xl:mb-5">
       {/* project category & count */}
-      <section className="lg:[grid-area:a] lg:py-4 bg-secondary">
+      <section className="lg:[grid-area:a] lg:py-4 bg-secondary animate-reveal-right">
         <div className="flex justify-around my-1 lg:mt-0">
           <div className="flex lg:flex-col gap-x-2">
             <p className={clsx(category, "text-base-100 bg-base-content dark:bg-base-100 dark:text-base-content")}>Web</p>
@@ -35,7 +35,7 @@ function ProjectPage() {
       </section>
 
       {/* featured project */}
-      <article className="lg:[grid-area:b] relative bg-primary h-74 sm:h-84 lg:h-109 xl:h-124 flex flex-col justify-between p-6 lg:p-10 xl:p-14">
+      <article className="lg:[grid-area:b] relative bg-primary h-74 sm:h-84 lg:h-109 xl:h-124 flex flex-col justify-between p-6 lg:p-10 xl:p-14 animate-reveal-left">
         <a target="_blank" href={featuredProject.link}
           className="flex space-x-1 text-2xl lg:text-3xl xl:text-4xl hover:opacity-75">
           <SiLivejournal />
@@ -57,7 +57,7 @@ function ProjectPage() {
         <p className="font-kumbh text-lg sm:w-1/2 lg:w-auto lg:text-2xl xl:text-3xl">{featuredProject.description}</p>
       </article>
 
-      <section className="lg:[grid-area:c] hidden lg:h-67.5 lg:block bg-secondary"></section>
+      <section className="lg:[grid-area:c] hidden lg:h-67.5 lg:block bg-secondary animate-reveal-right"></section>
 
       {/* more projects */}
       <section className="lg:[grid-area:d] mt-5">

@@ -10,10 +10,10 @@ function HomePage() {
   return (
     <main className="grid lg:[grid-template-areas:'b_a'_'b_d'_'c_d'_'._d'] lg:grid-cols-[1fr_284px] gap-5 lg:gap-x-11.5">
       {/* weather */}
-      <section className="lg:[grid-area:a] h-5 lg:h-67.5 bg-secondary" />
+      <section className="lg:[grid-area:a] h-5 lg:h-67.5 bg-secondary animate-reveal-right" />
 
       {/* headline */}
-      <section className="lg:[grid-area:b] relative bg-primary h-74 sm:h-84 lg:h-109 xl:h-124 flex flex-col justify-around px-6 lg:px-10 xl:px-14">
+      <section className="lg:[grid-area:b] relative bg-primary h-74 sm:h-84 lg:h-109 xl:h-124 flex flex-col justify-around px-6 lg:px-10 xl:px-14 animate-reveal-left">
         <div className="flex gap-x-3">
           <img src="profile.png" className="size-7 lg:size-8 xl:size-10 rounded-full" />
           <p className="text-2xl lg:text-3xl xl:text-4xl mt-0.5 xl:mt-1">Hello, I'm</p>
@@ -25,7 +25,7 @@ function HomePage() {
       </section>
 
       {/* about me */}
-      <section className="lg:[grid-area:c] mt-5">
+      <section className="lg:[grid-area:c] mt-5 lg:animate-reveal-left">
         <SectionTag left>About Me</SectionTag>
         <p className="font-kumbh text-lg md:text-xl xl:text-2xl mt-4 lg:mt-6">{bio.introduction}</p>
         <ul className="font-kumbh grid sm:grid-cols-2 gap-5 md:gap-7 mt-5 lg:mt-7.5">
@@ -41,7 +41,7 @@ function HomePage() {
       </section>
 
       {/* skills */}
-      <section className="lg:[grid-area:d] bg-secondary px-5 py-6">
+      <section className="lg:[grid-area:d] bg-secondary px-5 py-6 lg:animate-reveal-right">
         <p className="[writing-mode:sideways-lr] float-right text-4xl bg-accent dark:bg-base-100 text-base-100 dark:text-base-content px-2 w-9 ml-5">Tech Stack</p>
         <div className="flex gap-x-3">
           <img src="github.png" className="size-8 rounded-full" />
