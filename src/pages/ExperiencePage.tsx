@@ -5,7 +5,7 @@ function ExperiencePage() {
   return (
     <main className="mt-7.5 lg:mt-12.5">
       {jobs.map(job => (
-        <article className="grid [grid-template-areas:'a_b'_'a_c'] md:[grid-template-areas:'b_a_c'] md:grid-cols-[190px_auto_1fr] gap-x-3 gap-y-5 md:gap-5">
+        <article key={job.company} className="grid [grid-template-areas:'a_b'_'a_c'] md:[grid-template-areas:'b_a_c'] md:grid-cols-[190px_auto_1fr] gap-x-3 gap-y-5 md:gap-5">
           {/* company logo */}
           <section className="[grid-area:a] relative md:flex justify-center
           before:absolute before:left-1/2 before:w-px before:h-full before:bg-base-content">

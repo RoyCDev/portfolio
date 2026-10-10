@@ -6,13 +6,13 @@ function ContactLinks() {
   return (
     <div className="flex justify-end text-3xl lg:text-5xl gap-x-2 lg:gap-x-5 text-accent">
       <a target="_blank" href="https://www.linkedin.com/in/roycheungsw">
-        <PiLinkedinLogoFill />
+        <PiLinkedinLogoFill className="hover:opacity-75" />
       </a>
       <a href="mailto:rcheung0117@gmail.com">
-        <MdEmail />
+        <MdEmail className="hover:opacity-75" />
       </a>
       <a target="_blank" href="https://github.com/RoyCDev">
-        <TbBrandGithubFilled />
+        <TbBrandGithubFilled className="hover:opacity-75" />
       </a>
     </div>
   )
