@@ -42,7 +42,7 @@ function HomePage() {
 
       {/* skills */}
       <section className="lg:[grid-area:d] bg-secondary px-5 py-6">
-        <p className="[writing-mode:sideways-lr] float-right text-4xl bg-accent dark:bg-base text-base-100 dark:text-base-content px-2 w-9 ml-5">Tech Stack</p>
+        <p className="[writing-mode:sideways-lr] float-right text-4xl bg-accent dark:bg-base-100 text-base-100 dark:text-base-content px-2 w-9 ml-5">Tech Stack</p>
         <div className="flex gap-x-3">
           <img src="github.png" className="size-8 rounded-full" />
           <p className="text-2xl mt-1">RoyCDev</p>

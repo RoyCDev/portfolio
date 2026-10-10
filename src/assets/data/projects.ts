@@ -41,7 +41,7 @@ const projects: Project[] = [
   {
     name: "GasoLean",
     year: 2025,
-    description: "A mobile application that provides an in-depth analysis of your gas consumption to help you save more gas and decrease the use of fossil fuel usage.",
+    description: "A mobile application that provides an in-depth analysis of your gas consumption to help you save more gas and decrease fossil fuel usage.",
     tools: ["Adobe XD"],
     category: "UI",
     link: "https://xd.adobe.com/view/1d4ea304-7653-49fa-acb9-97e3dff2aec5-481d/screen/1f7fe80d-bace-48f5-a097-c7e3e20dfd3f",

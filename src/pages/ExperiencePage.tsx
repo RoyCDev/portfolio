@@ -28,7 +28,7 @@ function ExperiencePage() {
             <p className="text-xl lg:text-2xl mt-7.5 lg:mt-11.5">Responsibilities:</p>
             <ol className="font-kumbh lg:text-lg mt-2">
               {job.responsibilities.map((res, index) => (
-                <li>
+                <li key={index}>
                   {index + 1}. {res}
                 </li>)
               )}
